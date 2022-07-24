@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#main_page{
+ max-height: 400vh;
+ height: 100vh;
+ background-color: antiquewhite;
+ padding: 10px;
+}

@@ -33,7 +33,7 @@
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
             <span class="fs-4">
-                歡迎！X X 系統
+                歡迎！O O 會員管理系統
             </span>
           </a>
     
@@ -61,7 +61,11 @@
 
       </div>
 
+      <!-- 彈出alert -->
+      <div id="liveAlertPlaceholder"></div>
 
+
+      
       <div id='main_page' class="container">
         
       </div>

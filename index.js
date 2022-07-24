@@ -6,8 +6,47 @@ var  main_page = {
     GoToMemberListPage:function(){},
     GoToActivePage:function(){},
     GoToHomePage:function(){},
+    ShowAlert:function(){},
 }
 
+
+
+
+/***
+ * success
+ * danger
+ * warning
+ * info
+ * primary
+ * secondary
+ */
+main_page.ShowAlert = function(type,message){
+
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+      $('#liveAlertPlaceholder').empty();
+      alertPlaceholder.append(wrapper)
+    }
+  
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert(message, type)
+      })
+    }
+
+
+
+}
 
 
 main_page.GoToHomePage = function(){
